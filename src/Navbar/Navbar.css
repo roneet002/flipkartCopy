@@ -1,0 +1,33 @@
+
+
+.navbar{background-color:#000;color: #fff;position: relative;}
+.navbar ul{list-style-type: none;margin:0;padding:0;display: inline-block;position:relative;cursor:default;z-index:500;}
+.navbar a{color: #fff;font-size: 13px;display: block;padding:9px 15px}
+.navbarLft{width: 100%;}
+.navbarLft > .megaMenu{display:block;float: left;}
+.navbarLft > li > a {position:relative;display:block;z-index:510;}
+    .navbarLft > li > ul.subMenu {
+        position: absolute;
+        display: block;
+        width: 100%;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden; 
+        background: #eee;
+        border-radius: 0 0 3px 3px;
+        -webkit-transition: all .3s ease .15s;
+        -moz-transition: all .3s ease .15s;
+        -o-transition: all .3s ease .15s;
+        -ms-transition: all .3s ease .15s;
+        transition: all .3s ease .15s;
+    }
+/******dropdown css*******/
+.no-border p{color: #000;padding-left: 15px;padding-bottom:0;margin:20px 0 6px 0;font-size: 14px;}
+.navbarLft > .megaMenu:hover > ul.subMenu{opacity: 1;visibility: visible;}
+.subMenu{display: block;background-color: #fff;}
+.subMenu .subMenuContent a{color: #333;padding:3px 15px;position: relative;}
+.subMenu a::before{position:absolute;left:0;top:0;content:'\f105';font-family:'Font Awesome 5 Free';font-weight: 900;}
+.coslmenu{width:20%;vertical-align: top;}
+.subMenuContent{float: left;width:80%;}
+.rftImgSection {float:right}
